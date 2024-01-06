@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&family=Sarabun:ital,wght@0,200;0,300;0,500;1,100;1,200;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 *{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -88,8 +96,8 @@ li i{
     margin-right: 20px;
 }
 .img img{
-    width:300px;
-    height: 300;
+    width:250px;
+    height: 250px;
     border-radius: 50%;
 }
 .main{
@@ -98,7 +106,7 @@ li i{
     padding-bottom: 20px;
     place-items: center;
     justify-content: center;
-    /* background-color: red; */
+    background-color: rgb(226, 198, 198);
     display: grid;
     grid-template-rows: 1fr ;
     grid-template-columns:  60% 1fr;
@@ -133,23 +141,41 @@ li i{
         gap: 10px;
         width: 350px;
     }
+    .sobre h1{
+        font-size: 1.9em;
+    }
+    .sobre p{
+        font-size: .9em;
+    }
+    .img{
+        margin-top: 40px;
+    }
     .img img{
         border-radius: 50%;
-        width: 250px;
+        width: 200px;
+        height: 200px;
     }
     .projetcs_infor h1{
-        font-size: 1.3em;
+        font-size: 1.25em;
+    }
+    .projetcs_infor h2{
+        font-size:1em;
     }
     .ul{
         gap: 2px;
-        grid-template-columns: repeat(5, 4.2em);
+        grid-template-columns: repeat(5, 3em);
     }
     .ul li{
         width:4.5em;
-        font-size: .8em;
+        font-size: .6em;
     }
     .ul_main li{
         padding: 5px;
+    }
+
+    .text-footer{
+        height: 100px;
+        width: 100px;
     }
 }
 .section-card{
@@ -162,6 +188,10 @@ li i{
     gap: 10px;
     background-color: #F57025;
     display: flex;
+}
+
+.inform-card p{
+    text-align: center;
 }
 
 .icones{
@@ -177,8 +207,13 @@ li i{
     width: 50px;
     background-color: #20D37D;
     border-radius: 50%;
+    transition: .2s;
     padding: 10px;
     display: inline-block;
+}
+.icones span:hover{
+    background-color: #32d57e;
+    color: white;
 }
 .icones h2{
     margin-bottom: 20px;
@@ -186,11 +221,11 @@ li i{
 
 
 .card{
-    width: 250px;
+    width: 300px;
   
     display: flex;
     padding: 20px;
-    border-radius: 14px;
+    border-radius: 30px;
     background-color: white;
     flex-direction: column;
     justify-content: center;
@@ -199,3 +234,40 @@ li i{
     height: 280px;
 }
 
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color:#f6cdcd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.span-icone{
+    
+    display: inline-block;
+    width: 20px;
+    padding: 10px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(188, 32, 32);
+}
+.text-footer{
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.text-footer p{
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+.icone-footer{
+   
+    color:  #20D37D;
+    font-size: 1.9em;
+}
