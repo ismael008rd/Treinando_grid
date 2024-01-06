@@ -7,6 +7,7 @@
 .header{
     width: 100%;
     display: grid;
+  
     
     grid-template-rows:10% 100%;
     background-color:white;
@@ -45,20 +46,36 @@
 .nav{
     width: 100%;
     display: grid;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .ul{
     display: grid;
+    width: 100%;
     place-items: center;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
-    grid-template-columns: repeat(5, 4em);
+    grid-template-columns: repeat(5, 4.5em);
 }
 .ul li{
+    width: 5em;
+    display: inline-block;
+    
+    text-align: center;
+    
+    transition: .4s;
     list-style: none;
     
 }
+.ul li:hover{
+    padding: 5px;
+    
+    background-color: #66f5a8;
+
+}
+
 li a{
     text-decoration: none;
     color: black;
@@ -114,7 +131,7 @@ li i{
     }
     .sobre{
         gap: 10px;
-        width: 200px;
+        width: 350px;
     }
     .img img{
         border-radius: 50%;
@@ -122,6 +139,14 @@ li i{
     }
     .projetcs_infor h1{
         font-size: 1.3em;
+    }
+    .ul{
+        gap: 2px;
+        grid-template-columns: repeat(5, 4.2em);
+    }
+    .ul li{
+        width:4.5em;
+        font-size: .8em;
     }
     .ul_main li{
         padding: 5px;
