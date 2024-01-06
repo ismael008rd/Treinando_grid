@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    display: grid;
+    
+    grid-template-rows:10% 100%;
+    background-color:white;
+}
+.projetcs_infor{
+    gap: 30px;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#54D28E;
+}
+
+
+.projetcs_infor h1{
+    font-size: 1.9em;
+    color: white;
+}
+
+.btn_cadastro{
+    width: 130px;
+    color: white;
+    background-color: #E98C36;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+.projetcs_infor h2{
+    color: white;
+}
+.nav{
+    width: 100%;
+    display: grid;
+    
+}
+
+.ul{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 4em);
+}
+.ul li{
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li i{
+    background-color: #54D28E;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.img img{
+    width:300px;
+    height: 300;
+    border-radius: 50%;
+}
+.main{
+    align-items: center;
+    height: 400px;
+    padding-bottom: 20px;
+    place-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns:  60% 1fr;
+}
+.sobre{
+    width: 400px;
+   
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.ul_main li{
+    list-style: none;
+    padding: 10px;
+}
+
+.ul_main li span{
+    font-weight: bold;
+}
+
+@media screen and (max-width:870px) {
+    .main{
+        padding-top: 30px;
+        display: flex ;
+        gap: 10px;
+        height: 700px;
+        flex-direction: column;
+    }
+    .sobre{
+        gap: 10px;
+        width: 200px;
+    }
+    .img img{
+        border-radius: 50%;
+        width: 250px;
+    }
+    .projetcs_infor h1{
+        font-size: 1.3em;
+    }
+    .ul_main li{
+        padding: 5px;
+    }
+}
+.section-card{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #F57025;
+    display: flex;
+}
+
+.icones{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icones span{
+    text-align: center;
+    width: 50px;
+    background-color: #20D37D;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+.icones h2{
+    margin-bottom: 20px;
+}
+
+
+.card{
+    width: 250px;
+  
+    display: flex;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+    height: 280px;
+}
+
